@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 class Main {
   public static void main(String[] args) {
-    Scanner scan = new Scanner(System.in);
     int op;
+    do{
+    Scanner scan = new Scanner(System.in);
     System.out.println("What type of operation do you wish to perform?");
     System.out.println("\t1. add");
     System.out.println("\t2. subtract");
@@ -30,7 +31,9 @@ class Main {
     }else{
       System.out.println("Not a valid option");
     }
-    
+    }while(op!=0);
+
+    System.exit(0); 
   }
 
   public static void add(double x, double y){
